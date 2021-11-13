@@ -8,8 +8,8 @@
   
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" crossorigin="anonymous">
   <!-- css -->
   <link rel="stylesheet" href="./style/style.css">
   
@@ -56,11 +56,33 @@
 
           <img class="avatar" src="./images/image-avatar.png" alt="avatar">
         </div>
+      
+        <div class="cart hidden">
+          <div class="cart-header">Cart</div>
+          <div class="product-in-cart">
+            <div class="item">
+              <img class="item-thumb" src="./images/image-product-1-thumbnail.jpg" alt="product 1 thumb">
+              <div class="details">
+                <div class="product-name">Autumn Limited Edition...</div>
+                <div class="price-group">
+                  <div class="price">$125.00</div>x
+                  <div class="count">3</div>
+                  <div class="total-amount">$375.00</div>
+                </div>
+              </div>
+              <img id="btnDelete" src="./images/icon-delete.svg" alt="icon delete">
+            </div>
+          </div>
+          <div class="msg-empty hidden">Your cart is empty.</div>
+          <div class="checkout">Check Out</div>
+        </div>
       </header>
+
+      
 
       <div class="content">
 
-        <!-- lightbox -->
+        <!-- Lightbox -->
         <section class="lightbox">
           <img class="product-hero" src="./images/image-product-1.jpg" alt="img product" >
           <div class="previous arrow">
@@ -70,6 +92,37 @@
             <img src="./images/icon-next.svg" alt="icon next">
           </div>
         </section>
+
+        <!-- Product -->
+        <section class="product">
+          <span class="company-name">Sneaker Company</span>
+          <h1 class="product-title">Fall Limited Edition <br>Sneakers</h1>
+          <p class="product-desc">These low profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+          </p>
+          <div class="price">
+            <div class="group">
+              <div class="product-price">$125.00</div>
+              <div class="discount">50%</div>
+            </div>
+            <div class="price-before">$250.00</div>
+          </div>
+
+          <div class="count-btn-group">
+            <div class="content-wrapper">
+              <img id="btnMinus" src="./images/icon-minus.svg" alt="icon minus">
+              <div class="counter">0</div>
+              <img id="btnPlus" src="./images/icon-plus.svg" alt="icon plus">
+            </div>
+
+            <div class="btn">
+              <img src="./images/icon-cart.svg" alt="icon cart">
+              <p>Add to Cart</p>
+            </div>
+          </div>
+        </section>
+
+
       </div>
 
 
