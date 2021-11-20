@@ -42,8 +42,9 @@
 
                         a {
                             display: block;
-                            padding: 4rem 0;
-                            border-bottom: 1px solid transparent;
+                            padding: 3.5rem 0 3rem 0;
+                            border-bottom: 3px solid transparent;
+                        
 
                             &:hover {
                                 color: $very-dark-blue;
@@ -77,18 +78,70 @@
         justify-content: space-between;
         gap: 10rem;
         padding: 9rem 5rem;
-    }
 
-    .lightbox {
-        width: 100%;
-
-        .product-hero {
-            border-radius: 1.5rem;
-        }
-
-        .previous, .next {
-            display: none;
-        }
-    }
+        .lightbox {
+            width: 100%;
     
+            .product-hero {
+                border-radius: 1.5rem;
+            }
+    
+            .previous, .next {
+                display: none;
+            }
+    
+            .product-thumbs {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 2.5rem;
+        
+                .thumbs {
+                    border-radius: 1rem;
+                    margin: 0;
+                    border: 3px solid transparent;
+
+                    img {
+                        width: 8rem;
+                        border-radius: 0.5rem;
+                    }
+        
+                    &:hover {
+                        cursor: pointer; 
+                        opacity: 0.75;
+                    }
+                }
+                
+                .active {
+                    border: 3px solid $orange;
+                    opacity: 0.5;
+                }
+            }
+        }
+        
+        .product {
+            .product-title {
+                font-size: 3rem;
+        
+            }
+            .count-btn-group {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                
+                gap: 1rem;
+                .content-wrapper {
+                    width: 40%;
+                    padding: 1rem;
+    
+                }
+    
+                .btn {
+                    width: 60%;
+                    padding: 1.5rem;
+                }
+            }
+            
+        }
+    }
 }
