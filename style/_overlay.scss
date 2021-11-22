@@ -1,0 +1,48 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color:$black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .closeBtn {
+        width: 40rem;
+        text-align: end;
+        padding: 2rem 0.5rem;
+
+        img {
+            cursor: pointer;
+            filter: brightness(300%);
+        }
+    }
+    
+
+    .lightbox {
+        max-width: 40rem;
+
+        .next {
+            display: flex;
+            right: 0;
+            transform: translate(50%);
+        }
+        .previous {
+            display: flex;
+            left: 0;
+            transform: translate(-50%);
+        }
+
+        .arrow {
+            top: 37.5%;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

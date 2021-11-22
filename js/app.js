@@ -23,6 +23,12 @@ const productsInShoppingCart = document.querySelector('.product-in-cart');
 const msgEmpty = document.querySelector('.msg-empty');
 const checkout = document.querySelector('.checkout');
 
+const overlay = document.querySelector('.overlay');
+const lightbox = document.querySelector('.lightbox');
+
+let lightboxGallery;
+let lightboxHero;
+
 //Numerical Variabels
 let productCounterValue = 0;
 let productsInCart = 0;
@@ -37,10 +43,12 @@ btnCart.addEventListener('click', openCart);
 btnPlus.addEventListener('click', productCounterPlus);
 btnMinus.addEventListener('click', productCounterMinus);
 
-btnNext.addEventListener('click', handleBtnClickNext)
-btnPrevious.addEventListener('click', handleBtnClickPrevious)
+btnNext.addEventListener('click', handleBtnClickNext);
+btnPrevious.addEventListener('click', handleBtnClickPrevious);
 
 btnAddToCart.addEventListener('click', addToCart);
+
+heroImg.addEventListener('click', onHeroImgClick);
 
 gallery.forEach(img => {
     img.addEventListener('click', onThumbClick);
@@ -197,4 +205,110 @@ function onBtnDeleteClick() {
     if (productsInCart == 0) {
         productsInShoppingCart.innerHTML = '';
     }
+}
+
+function onHeroImgClick() {
+    if (window.innerWidth >= 1350) {
+        if (overlay.childElementCount ==1) {
+            const newNode = lightbox.cloneNode(true);
+            overlay.appendChild(newNode);
+
+            const btnOverlayClose = document.querySelector('#btnOverlayClose');
+            btnOverlayClose.addEventListener('click', onBtnOverlayClose);
+
+            lightboxGallery = overlay.querySelectorAll('.thumbs');
+            lightboxHero = overlay.querySelector('.product-hero')
+            lightboxGallery.forEach(img => {
+                img.addEventListener('click', onThumbClickLightbox);
+            });
+
+            const btnOverlayNext = overlay.querySelector('.next');
+            const btnOverlayPrevious = overlay.querySelector('.previous');
+            btnOverlayNext.addEventListener('click', handleBtnClickNextOverlay);
+            btnOverlayPrevious.addEventListener('click', handleBtnClickPreviousOverlay);
+        }
+        overlay.classList.remove('hidden');
+        
+    }
+}
+
+function onBtnOverlayClose() {
+    overlay.classList.add('hidden');
+}
+
+function onThumbClickLightbox(event) {
+    // clear active state for all thumbnails 
+    lightboxGallery.forEach(img => {
+        img.classList.remove('active');
+    });
+    //set active thumbnails
+    event.target.parentElement.classList.add('active');
+    // update product hero img
+    lightboxHero.src = event.target.src.replace('-thumbnail','');
+}
+
+// function handleBtnClickNextOverlay() {
+//     let imageIndex = getOverlayCurrentImageIndex();
+//     imageIndex++;
+//     if (imageIndex > 4) {
+//         imageIndex = 1;
+//     }
+//     setOverlayHeroImage(imageIndex);
+// }
+
+// function handleBtnClickPreviousOverlay() {
+//     let imageIndex = getOverlayCurrentImageIndex();
+//     imageIndex--;
+//     if (imageIndex < 1) {
+//         imageIndex = 4;
+//     }
+//     setOverlayHeroImage(imageIndex);
+// }
+
+// function getOverlayCurrentImageIndex() {
+//     const imageIndex = parseInt(lightboxHero.src.split('\\').pop().split('/').pop().replace('.jpg', '').replace('image-product-', ''));
+//     return imageIndex;
+// }
+
+// function setOverlayHeroImage(imageIndex) {
+//     lightboxHero.src = `./images/image-product-${imageIndex}.jpg`;
+//     //images not sync
+//     lightboxGallery.forEach(img => {
+//         img.classList.remove('active');
+//     });
+//     //set active thumbnail
+//     lightboxGallery[imageIndex-1].classList.add('active');
+// }
+
+function handleBtnClickNextOverlay() {
+    let imageIndex = getOverlayCurrentImageIndex();
+    imageIndex++;
+    if (imageIndex > 4) {
+        imageIndex = 1;
+    }
+    setOverlayHeroImage(imageIndex);
+}
+
+function handleBtnClickPreviousOverlay() {
+    let imageIndex = getOverlayCurrentImageIndex();
+    imageIndex--;
+    if (imageIndex < 1) {
+        imageIndex = 4;
+    }
+    setOverlayHeroImage(imageIndex);
+}
+
+function getOverlayCurrentImageIndex() {
+    const imageIndex = parseInt(lightboxHero.src.split('\\').pop().split('/').pop().replace('.jpg', '').replace('image-product-', ''));
+    return imageIndex;
+}
+
+function setOverlayHeroImage(imageIndex) {
+    lightboxHero.src = `./images/image-product-${imageIndex}.jpg`;
+    //images are not sync
+    lightboxGallery.forEach(img => {
+        img.classList.remove('active');
+    });
+    //set active thumbnail
+    lightboxGallery[imageIndex-1].classList.add('active');
 }
