@@ -11,12 +11,10 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -33,13 +31,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/.desktop-preview.jpg)
-
+![Desktop Preview](./screenshot/desktop-preview.jpg)
+[Desktop Cart Preview](./screenshot/desktop-cart-preview.jpg)
+[Desktop Lightbox Preview](./screenshot/desktop-lightbox.jpg)
+[Mobile Preview](./screenshot/mobile-preview.jpg)
+[Mobile Cart Preview](./screenshot/mobile-cart-preview.jpg)
+[Mobile Menu Preview](./screenshot/mobile-menu-preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [E-commerce product page Solution](https://www.frontendmentor.io/solutions/ecommerce-product-page-challenge-on-frontend-mentor-30Uz9yScU)
+- Live Site URL: [E-commerce product page challenge](https://eginugrahas-ecommerce-product.netlify.app/)
 
 ## My process
 
