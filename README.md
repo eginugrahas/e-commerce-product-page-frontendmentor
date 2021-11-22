@@ -33,10 +33,10 @@ Users should be able to:
 
 ![Desktop Preview](./dekstop-preview.jpeg)
 [Desktop Cart Preview](./desktop-cart-preview.jpeg)
-[Desktop Lightbox Preview](./desktop-lightbox.jpeg)
-![Mobile Preview](./mobile-preview.jpeg)
-[Mobile Cart Preview](./mobile-cart-preview.jpeg)
-[Mobile Menu Preview](./mobile-menu-preview.jpeg)
+[Desktop Lightbox Preview](./desktop-lightbox.png)
+![Mobile Preview](./mobile-preview.png)
+[Mobile Cart Preview](./mobile-cart-preview.png)
+[Mobile Menu Preview](./mobile-menu-preview.png)
 
 ### Links
 
