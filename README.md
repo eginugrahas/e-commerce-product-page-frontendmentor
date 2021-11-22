@@ -32,11 +32,11 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Preview](./dekstop-preview.jpeg)
-[Desktop Cart Preview](./desktop-cart-preview.jpeg)
-[Desktop Lightbox Preview](./desktop-lightbox.png)
-![Mobile Preview](./mobile-preview.png)
-[Mobile Cart Preview](./mobile-cart-preview.png)
-[Mobile Menu Preview](./mobile-menu-preview.png)
+- [Desktop Cart Preview](./desktop-cart-preview.jpeg)
+- [Desktop Lightbox Preview](./desktop-lightbox.png)
+- [Mobile Preview](./mobile-preview.png)
+- [Mobile Cart Preview](./mobile-cart-preview.png)
+- [Mobile Menu Preview](./mobile-menu-preview.png)
 
 ### Links
 
