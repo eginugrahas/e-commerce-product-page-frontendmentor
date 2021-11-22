@@ -31,12 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Preview](screenshot\dekstop-preview.jpeg)
+![Desktop Preview](./dekstop-preview.jpeg)
 [Desktop Cart Preview](screenshot/desktop-cart-preview.jpeg)
 [Desktop Lightbox Preview](screenshot/desktop-lightbox.jpeg)
 [Mobile Preview](screenshot/mobile-preview.jpeg)
 [Mobile Cart Preview](screenshot/mobile-cart-preview.jpeg)
-[Mobile Menu Preview](screenshot\dekstop-preview.jpegscreenshot/mobile-menu-preview.jpeg)
+[Mobile Menu Preview](screenshot/mobile-menu-preview.jpeg)
 
 ### Links
 
