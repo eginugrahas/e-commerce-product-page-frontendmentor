@@ -31,12 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Preview](./screenshot/desktop-preview.jpg)
-[Desktop Cart Preview](./screenshot/desktop-cart-preview.jpg)
-[Desktop Lightbox Preview](./screenshot/desktop-lightbox.jpg)
-[Mobile Preview](./screenshot/mobile-preview.jpg)
-[Mobile Cart Preview](./screenshot/mobile-cart-preview.jpg)
-[Mobile Menu Preview](./screenshot/mobile-menu-preview.jpg)
+![Desktop Preview](./screenshot/desktop-preview.jpeg)
+[Desktop Cart Preview](./screenshot/desktop-cart-preview.jpeg)
+[Desktop Lightbox Preview](./screenshot/desktop-lightbox.jpeg)
+[Mobile Preview](./screenshot/mobile-preview.jpeg)
+[Mobile Cart Preview](./screenshot/mobile-cart-preview.jpeg)
+[Mobile Menu Preview](./screenshot/mobile-menu-preview.jpeg)
 
 ### Links
 
